@@ -1,0 +1,293 @@
+/*
+  HW4 Part 2 - style.css
+  Author: Mohith Sai Gadde
+  Student ID: 02209215
+  Email: MohithSai_Gadde@student.uml.edu
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+header p {
+  margin: 0;
+  font-size: 0.96rem;
+  color: #4b5563;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.tabs-card {
+  padding-top: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.row > div {
+  flex: 1 1 160px;
+  min-width: 140px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+  background-color: #eff6ff;
+}
+
+.slider {
+  margin-top: 0.35rem;
+}
+
+.ui-slider {
+  background: #e5e7eb;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  height: 0.35rem;
+}
+
+.ui-slider .ui-slider-handle {
+  top: -0.4rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  transition: background-color 0.18s ease, transform 0.08s ease, box-shadow 0.18s ease;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  background: #1d4ed8;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-ghost {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: transparent;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: 1px solid #d1d5db;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.btn-ghost:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.btn-danger {
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.btn-danger:hover {
+  background: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.note.small {
+  font-size: 0.8rem;
+}
+
+.note.error {
+  color: #b91c1c;
+}
+
+.divider {
+  margin: 1.25rem 0;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+label.error {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: #b91c1c;
+}
+
+input.error {
+  border-color: #b91c1c;
+  background-color: #fef2f2;
+}
+
+.table-shell {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  padding: 0.35rem 0.45rem;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  white-space: nowrap;
+}
+
+thead th {
+  background: #eff6ff;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.corner {
+  background: #e0e7ff;
+  font-weight: 800;
+}
+
+tbody th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+tbody tr:hover {
+  background-color: #e5f2ff;
+}
+
+#tabs {
+  font-size: 0.95rem;
+}
+
+#tabs .ui-tabs-nav {
+  margin-bottom: 0.75rem;
+}
+
+#tabs .ui-tabs-nav li .ui-icon-close {
+  margin-left: 0.35rem;
+  cursor: pointer;
+}
+
+.multi-delete-list {
+  margin-bottom: 0.75rem;
+}
+
+.multi-delete-list .multi-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .row > div {
+    flex: 1 1 100%;
+  }
+}

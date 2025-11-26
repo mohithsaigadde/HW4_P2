@@ -99,6 +99,6 @@ Student ID:02209215
 Email: [MohithSai_Gadde@student.uml.edu]
 
 ## LINK:
-## GitHub Repository: 
-## GitHub Pages (Live Demo): 
+## GitHub Repository: https://github.com/mohithsaigadde/HW4_P2.git
+## GitHub Pages (Live Demo):  https://mohithsaigadde.github.io/HW4_P2/
 
